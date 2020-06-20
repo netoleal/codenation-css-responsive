@@ -15,21 +15,22 @@ body {
   padding: 0;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+header {
+  height: 300px;
+  background-image: url('1920x1080.png');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
   margin-left: 5rem;
   padding: 1rem;
+  max-width: 1320px;
 }
 
 .navbar {
@@ -124,6 +125,25 @@ main {
 
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
+}
+
+@media (max-width: 1280px) {
+  header{
+    background-image: url('1280x300.jpg');
+    background-position: left center;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    background-image: url('1024x300.jpg');
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    background-image: url('600x300.jpg');
+  }
 }
 
 /* Small screens */
